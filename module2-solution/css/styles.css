@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Dosis' , sans-serif;
+}
+
+h1{
+    text-align: center;
+    margin: 5%;
+    font-size: 1.75em;
+    font-family: 'Montserrat', sans-serif;
+}
+
+section {
+    display: block;
+    position: relative;
+    background-color: bisque;
+    border: 3px solid black;
+    padding: 50px 20px 0;
+    padding-bottom: 10px;
+    font-size: 1em;
+}
+
+section > h2 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 1%;
+    border: 1px solid black;
+    border-right: none;
+    border-top: none;
+    width: 40%;
+    margin: 0;
+    text-align: center;
+    font-size: 1.25em;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#sand>h2 {
+    background-color: lightgreen;
+}
+
+#pasta>h2 {
+    background-color: lightsalmon;
+}
+
+#lasagna>h2 {
+    background-color: lightseagreen;
+}
+
+@media (min-width: 992px) {
+    section {
+        float:left;
+        width: 28.83%;
+        margin: 3%
+    }
+    #lasagna {
+        margin-left: 1.5%;
+    }
+
+    #sand {
+        margin-right: 1.5%;
+    }
+
+    #pasta {
+        margin-left: 1.5%;
+        margin-right: 1.5%;
+    }
+} 
+
+@media (min-width: 768px) and (max-width: 991px) {
+    #sand,#pasta {
+        margin: 3%;
+        width:45.5%;
+        float:left;
+    }
+    #lasagna {
+        clear:left;
+        margin: 3%;
+    }
+    #sand {
+        margin-right: 1.5%;
+    }
+
+    #pasta {
+        margin-left: 1.5%;
+    }
+}
+
+@media (max-width: 767px) {
+    section {
+        margin: 3% 5%;
+    }
+}
